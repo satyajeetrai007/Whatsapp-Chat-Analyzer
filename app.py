@@ -7,7 +7,8 @@ import seaborn as sns
 import HIndividual as i
 import HOverall as o
 
-st.sidebar.title(':red[WHA]**LYZER**')
+st.sidebar.title(':red[WHA]**LYZER-12H**')
+st.sidebar.info("Make sure chat is in 12 hour format")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
