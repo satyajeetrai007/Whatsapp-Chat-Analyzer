@@ -1,2 +1,2 @@
 # Whatsapp-Chat-Analyzer
-link - https://whalyzer.streamlit.app/
+App link - https://whalyzer-12h.streamlit.app/
