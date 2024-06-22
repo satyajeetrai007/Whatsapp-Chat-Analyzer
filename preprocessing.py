@@ -19,7 +19,7 @@ def preprocessing(data):
     # Defined the correct format string
     date_format = "%d/%m/%y, %I:%M %p - "
 
-    # Converted to datetime
+    # Converted to DateTime
     date_time_obj = pd.to_datetime(date_str_cleaned, format=date_format)
 
     df['dates'] = date_time_obj
@@ -65,8 +65,3 @@ def preprocessing(data):
 
 
     return df
-
-file = open('WhatsApp Chat with SAC NIT Meghalaya.txt','r',encoding = 'utf-8')
-Data = file.read()
-print(type(Data))
-x = preprocessing(Data)
