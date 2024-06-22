@@ -125,7 +125,8 @@ def omost_active_users(df):
     Most_busy_users_Messages_count = Most_busy_user_df['message']
     Most_busy_users_Messages_percentage = (Most_busy_user_df['message']/df.shape[0])*100
     new_df = pd.DataFrame({'Users':Most_busy_users ,'MessagePercentage':Most_busy_users_Messages_percentage})
-    new_df.index = [1,2,3,4,5,6,7,8,9,10] 
+    new_df.index = [np.linspace(1,new_df.shape[0],new_df.shape[0])] 
+
     fig,ax = plt.subplots()
     col1,col2 = st.columns(2)
     with col1:
